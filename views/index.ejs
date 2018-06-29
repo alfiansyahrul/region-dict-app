@@ -11,41 +11,62 @@
   </head>
   <body>
   	
-  <!-- 	Image and text -->
-	<nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#"><Strong> Kamus Tiga Bahasa </Strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<nav class="navbar navbar-expand-lg navbar-dark navigation">
+      <a class="navbar-brand" href="#"><Strong> Kamus Tiga Bahasa </Strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Info <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Info <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="wrapper">
+      <div class="custom-card">
+          <div class="dropdown">
+            <button class="btn language-switch btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bahasa Indonesia
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Bahasa Jawa</a>
+              <a class="dropdown-item" href="#">Bahasa Jawa Banten</a>  
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukan kata yang ingin diterjemahkan">
+            </div>
+            <div class="row">
+              <div class="col-8 text-left mt-2">
+                <span>Kata tidak ditemukan</span>
+              </div>
+              <div class="col-4 text-right">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+      </div>
+      <div class="custom-card">
+        <h5 class="secondary-color">Bahasa Jawa</h5>
+        <h3>Book</h3>
+      </div>
+      <div class="custom-card">
+        <h5 class="secondary-color">Bahasa Jawa Banten</h5>
+        <h3>Buuk</h3>
+      </div>
+    </div>
 
-<form>
-  <div class="form-group">
-    <label for="formGroupExampleInput"><Strong>Bahasa Indonesia</Strong></label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Masukan Kata">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput2"><Strong>Bahasa Jawa</Strong></label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Masukan Kata">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput3"><Strong>Bahasa Jawa Banten</Strong></label>
-    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Masukan Kata">
-  </div>
-</form>
-			
-			<input class="btn btn-primary" type="submit" value="Submit">
+    <footer class="text-center">
+      <span>Copyright &copy; KTB - Create by Syahrul Alfian</span>
+    </footer>
 
-	<script src="/javascripts/jquery-3.3.1.slim.min.js"></script>
+  <script src="/javascripts/jquery-3.3.1.slim.min.js"></script>
   <script src="/javascripts/popper.min.js"></script>
   <script src="/javascripts/bootstrap.min.js"></script>
   </body>
