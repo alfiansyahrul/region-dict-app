@@ -3,7 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'KamusApp Indo', desc: "inikamus" });
+  res.render('indonesia', { title: 'KamusApp Indo', desc: "inikamus" });
+});
+
+router.get('/jawa', function(req, res, next) {
+  res.render('jawa', { title: 'KamusApp Indo', desc: "inikamus" });
+});
+
+router.get('/jawa-banten', function(req, res, next) {
+  res.render('jawa-banten', { title: 'KamusApp Indo', desc: "inikamus" });
 });
 
 router.get('/about', function(req, res, next) {
