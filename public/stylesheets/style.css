@@ -1,11 +1,40 @@
-form {
-	background-color: green;
-	color:cyan;
-	padding: 10px 40px 10px 40px;
-	font-family: sans-serif;
-}
 
-nav {
-	background-color: green;
-
-}
+      body {
+        background-color: #e0e0e0;
+      }
+      .navigation {
+        background-color: #D32F2F;
+        color: #fff;
+      }
+      .wrapper {
+        background-color: #e0e0e0;
+        width: 100%;
+        padding: 10px;
+        height: auto;
+      }
+      .custom-card {
+        background-color: #fff;
+        width: 100%;
+        margin-bottom:10px;
+        padding: 25px 20px 20px 20px;
+      }
+      .secondary-color   {
+        color: #f44336;
+      }
+      .language-switch {
+        background-color: #fff;
+        color: #f44e41;
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 11px;
+        padding: 0;
+        border: 0;
+      }
+      footer {
+        font-size:13px;
+        position: fixed; 
+        bottom:0%;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        color: #666;
+      }
