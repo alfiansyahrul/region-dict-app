@@ -18,8 +18,8 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About KamusApp Indo', desc: "inikamus" });
 });
 
-router.get('/info', function(req, res, next) {
-  res.render('info', { title: 'Info KamusApp Indo', desc: "inikamus" });
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Info KamusApp Indo', desc: "inikamus" });
 });
 
 module.exports = router;
