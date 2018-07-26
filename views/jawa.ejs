@@ -38,13 +38,13 @@
               <a class="dropdown-item" href="/jawa-banten">Bahasa Jawa Banten</a>  
             </div>
           </div>
-          <form autocomplete="off">
+          <form autocomplete="off" action="/jawa" method="POST">
             <div class="form-group autocomplete">
-              <input id="myInput" name="myCountry" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukan kata yang ingin diterjemahkan">
+              <input id="myInput" name="word" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukan kata yang ingin diterjemahkan">
             </div>
             <div class="row">
               <div class="col-8 text-left mt-2">
-                <span>Kata tidak ditemukan</span>
+                <span><%= errorMessage %></span>
               </div>
               <div class="col-4 text-right">
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -54,11 +54,11 @@
       </div>
       <div class="custom-card">
         <h5 class="secondary-color">Bahasa Indonesia</h5>
-        <h3>Loading...</h3>
+        <h3><%= result[0].indonesia%></h3>
       </div>
       <div class="custom-card">
         <h5 class="secondary-color">Bahasa Jawa Banten</h5>
-        <h3>Loading...</h3>
+        <h3><%= result[0].banten%></h3>
       </div>
     </div>
 
@@ -165,7 +165,7 @@
     }
     
     /*An array containing all the country names in the world:*/
-    var countries = ["Akan","Aku","Alam","Aduh","Asik","Aman","Ambang","Baru","Bagi","Basah","Banyak","Buas","Bujuk","Begitu","Bila","Cari","Cacat","Capung","Cakar","Cara","Cinta","Cukup","Daki","Datang","Dan","Dusun","Demikian","Demi","Elok","Embun","Ekor","Elang","Fondasi","Gemuru","Garang","Gaji","Gaya","Hal","Hitungan","Hukuman","Harus","Ikan","Itu","Juga","Jangan","Jika","Jambang","Jalan","Kelapa","Karung","Kumis","Ketua","Lama","Lihat","Lupa","Lagi","Liku","Lancar","Luka","Manis","Manja","Manusia","Masak","Mudah","Nanas","Nangka","Nakal","Nomor","Opa","Oma","Orang","Pandai","Pakai","Pintar","Paling","Putaran","Qee","Rakus","Ramah","Rajin","Rahasia","Sakit","Selalu","Sayang","Suka","Sindrom","Susu","Tapi","Tikus","Tua","Tambah","Tari","Ukuran","Unjuk","Upah","Vendeta","Waktu","Yang","Yakin","Zebracross"];
+    var countries = ['klambi','deke','eram','angel','koyo','ora pernah','deke','ndelok','madang','ngopo','telo','wegah','mburi','repot','konco','aku'];
     
     /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
     autocomplete(document.getElementById("myInput"), countries);
